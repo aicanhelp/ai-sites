@@ -1,8 +1,3 @@
----
-bookCollapseSection: true
-weight: 10
----
-
 # 3rd Level of Menu
 
 Nefas discordemque domino montes numen tum humili nexilibusque exit, Iove. Quae

@@ -1,6 +1,6 @@
 ---
 bookCollapseSection: true
-weight: 20
+weight: 1
 ---
 
 # 2nd Level of Menu

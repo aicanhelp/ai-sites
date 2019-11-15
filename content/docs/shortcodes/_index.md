@@ -1,3 +1,6 @@
 ---
-bookFlatSection: true
+bookCollapseSection: true
+title: "Short Codes"
 ---
+
+# Introduction
