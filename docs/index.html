@@ -1,40 +1,21 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>My Docs</title>
-    <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
 </head>
 <body>
-<div id="docute"></div>
-<script src="https://unpkg.com/docute@4/dist/docute.js"></script>
+<div id="app"></div>
 <script>
-    new Docute({
-        target: '#docute',
-        nav: [
-            {title: 'Home', link: '/'},
-            {title: 'GitHub', link: 'https://github.com/egoist/docute', openInNewTab: true},
-            {
-                title: 'Community', children: [
-                    {title: 'Spectrum', link: 'https://spectrum.chat/your-community'},
-                    {title: 'Discord', link: 'https://discord.app/your-discord-server'}
-                ]
-            }
-        ],
-        sidebar: [
-            {
-                title: 'Guide',
-                children: [
-                    {title: 'Getting Started', link: '/guide/getting-started'},
-                    {title: 'Installation', link: '/guide/installation'}
-                ],
-                collapsable: true
-            },
-            // An external link
-            {title: 'GitHub', link: 'https://github.com/egoist/docute'}
-        ]
-    })
+    window.$docsify = {
+        loadSidebar: true,
+        loadNavbar: true,
+        externalLinkTarget: '_self',
+        cornerExternalLinkTarget: '_self',
+        basePath: 'https://aicanhelp.github.io/'
+    }
 </script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
