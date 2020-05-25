@@ -1,21 +1,45 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>My Docs</title>
+    <link rel="stylesheet" href="https://unpkg.com/docute@4/dist/docute.css">
 </head>
 <body>
-<div id="app"></div>
+<div id="docute"></div>
+<script src="https://unpkg.com/docute@4/dist/docute.js"></script>
 <script>
-    window.$docsify = {
-        loadSidebar: true,
-        loadNavbar: true,
-        externalLinkTarget: '_self',
-        cornerExternalLinkTarget: '_self',
-        basePath: 'https://aicanhelp.github.io/'
-    }
+    new Docute({
+        target: '#docute',
+        nav: [
+            {
+                title: 'Home',
+                link: '/'
+            },
+            {
+                title: 'GitHub',
+                link: 'https://github.com/egoist/docute',
+                openInNewTab: true
+            },
+            // A dropdown menu
+            {
+                title: 'Community',
+                children: [
+                    {
+                        title: 'Spectrum',
+                        link: 'https://spectrum.chat/your-community'
+                    },
+                    {
+                        title: 'Discord',
+                        link: 'https://discord.app/your-discord-server',
+                        openInNewTab: true
+                    }
+                ],
+                collapsable: boolean
+            }
+        ]
+    })
 </script>
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
