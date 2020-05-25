@@ -13,31 +13,26 @@
     new Docute({
         target: '#docute',
         nav: [
+            {title: 'Home', link: '/'},
+            {title: 'GitHub', link: 'https://github.com/egoist/docute', openInNewTab: true},
             {
-                title: 'Home',
-                link: '/'
-            },
-            {
-                title: 'GitHub',
-                link: 'https://github.com/egoist/docute',
-                openInNewTab: true
-            },
-            // A dropdown menu
-            {
-                title: 'Community',
-                children: [
-                    {
-                        title: 'Spectrum',
-                        link: 'https://spectrum.chat/your-community'
-                    },
-                    {
-                        title: 'Discord',
-                        link: 'https://discord.app/your-discord-server',
-                        openInNewTab: true
-                    }
-                ],
-                collapsable: boolean
+                title: 'Community', children: [
+                    {title: 'Spectrum', link: 'https://spectrum.chat/your-community'},
+                    {title: 'Discord', link: 'https://discord.app/your-discord-server'}
+                ]
             }
+        ],
+        sidebar: [
+            {
+                title: 'Guide',
+                children: [
+                    {title: 'Getting Started', link: '/guide/getting-started'},
+                    {title: 'Installation', link: '/guide/installation'}
+                ],
+                collapsable: true
+            },
+            // An external link
+            {title: 'GitHub', link: 'https://github.com/egoist/docute'}
         ]
     })
 </script>
